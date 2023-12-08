@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.3"defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>MineField!</title>
+  </head>
+  <body>
+    <div class="game-container flex flex-col justify-center items-center relative">
+      <h1 class="game-message">Message</h1>
+      <div class="boxes-container flex flex-wrap ">
+
+        
+      </div>
+      <div id="confetti-container"></div>
+
+    </div>
+    <audio id="waterSound" src="Water-Blup-2MedDistance-www.FesliyanStudios.com.mp3"></audio>
+    <audio id="lastBoxSound" src="congratulations-deep-voice-172193.mp3"></audio>
+    <audio id="losingSound" src="negative_beeps-6008.mp3"></audio>
+    <audio id="backgroundMusic" loop autoplay>
+      <source src="velvet-pulse-173852.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio>
+    
+  </body>
+</html>

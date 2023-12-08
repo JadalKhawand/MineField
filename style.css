@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.boxes-container {
+  width: 600px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border: 1px solid rgb(212, 212, 212);
+}
+.water-box {
+  background-color: aqua;
+}
+.water-box-visited{
+  background-color: rgb(34, 34, 198);
+  color: white;
+}
+
+.start-box {
+  background-color: red;
+}
+.end-box {
+  background-color: green;
+}
+body{
+  background-color:#6495ED;
+  background-color: darkslateblue;
+  height: 100vh;
+}
