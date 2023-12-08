@@ -197,3 +197,27 @@ function generateInActiveBox(i) {
         `;
 }
 
+function playSound(){
+  waterSound.currentTime = 0.3; 
+  waterSound.play();
+}
+function playLastSound(){
+
+  lastBoxSound.currentTime = 0; 
+  lastBoxSound.volume=1
+  lastBoxSound.addEventListener("canplay", function () {
+    lastBoxSound.play();
+  });
+  
+}
+function losingSoundfn(){
+  losingSound.currentTime=0;
+  losingSound.play()
+}
+
+function checkAllWaterBoxesVisited() {
+  const waterBoxElements = document.querySelectorAll(".water-box");
+  return Array.from(waterBoxElements).every((box) =>
+    box.classList.contains("water-box-visited")
+  );
+}
