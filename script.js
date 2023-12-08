@@ -9,7 +9,22 @@ let waterBoxes = [
 let boxesContainer = document.querySelector(".boxes-container");
 
 
+function triggerConfetti() {
+  // Configure confetti options
+  const config = {
+    spread: 180,
+    startVelocity: 40,
+    elementCount: 5,
+    dragFriction: 0.12,
+    duration: 3000,
+    stagger: 3,
+    colors: ['#FFD700', '#FF4500', '#00FF00', '#1E90FF'],
+    
+  };
 
+  // Trigger confetti explosion
+  confetti(config);
+}
 // 12 x 12
 // loop to generate 100 boxes
 generateInActiveGameBoard();
